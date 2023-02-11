@@ -16,23 +16,11 @@ function App() {
       <h1>this is redux basics</h1>
       <p>{techies.isSubscribed ? "true" : "false"}</p>
       <img src={techies.img} />
-      <button
-        disabled={!techies.isSubscribed}
-        onClick={() => dispatch(appleAction())}
-      >
-        apple
-      </button>{" "}
+      <button disabled={!techies.isSubscribed} onClick={() => dispatch(appleAction())}> apple </button>
       &nbsp;
-      <button
-        disabled={!techies.isSubscribed}
-        onClick={() => dispatch(googleAction())}
-      >
-        google
-      </button>{" "}
+      <button disabled={!techies.isSubscribed} onClick={() => dispatch(googleAction())}> google</button>
       &nbsp;
-      <button onClick={() => dispatch(subscribeAction())}>
-        {!techies.isSubscribed ? "subscribe" : "unSubscribe"}
-      </button>
+      <button onClick={() => dispatch(subscribeAction())}> {!techies.isSubscribed ? "subscribe" : "unSubscribe"} </button>
     </div>
   );
 }
